@@ -3,67 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Olivier Cesari – BTS SIO</title>
+    <title>Portfolio Olivier Cesari | BTS SIO Cybersécurité</title>
+    <meta name="description" content="Étudiant BTS SIO SISR cybersécurité Ajaccio. Projets NovaIT.fr, NetBox, TryHackMe.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-    <h1>Portfolio BTS SIO – Olivier Cesari</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projets.html">Mes Projets</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-
-<section>
-    <h2>Bienvenue sur mon portfolio</h2>
-    <p>
-        Bonjour ! Je suis <strong>Olivier Cesari</strong>, étudiant en <strong>BTS SIO</strong>.  
-        Ce portfolio présente mes projets, mes compétences et mon parcours dans le domaine informatique.
-    </p>
-</section>
-
-<section>
-    <h2>Compétences principales</h2>
-    <ul>
-        <li>Création de sites internet modernes et responsive</li>
-        <li>Développement de petits jeux vidéo (Unity)</li>
-        <li>Développement web & gestion de bases de données</li>
-        <li>Gestion de projet informatique</li>
-        <li>Travail en équipe & organisation</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Mon Parcours</h2>
-    <p><strong>2025 :</strong> BTS SIO (Services Informatiques aux Organisations)</p>
-    <p><strong>Option SISR :  solutions d'infrastructure, systèmes et réseaux</strong> </p>
-    <br>
-    <p><strong>2024 - 2025 :</strong> 1 an de prépa à Epita (Grande école d'ingénieur)</p>
-    <p><strong>Parccours accompagné (maths)</strong> </p>
-    <br>
-    <p><strong>2021 - 2024 :</strong> Lycée – Bac technologique (STI2D)</p>
-</section>
-
-<section>
-    <h2>CV</h2>
-    <p>
-        Vous pouvez télécharger mon CV ici :  
-        <a href="CV_Olivier_Cesari.pdf" download>Télécharger mon CV (PDF)</a>
-    </p>
-</section>
-
-</main>
-
-<footer>
-    © 2025 Olivier Cesari — 
-    <a href="mailto:cesariolivier7@gmail.com">Contactez-moi</a>
-</footer>
-
+    <header>
+        <h1>Portfolio Olivier Cesari</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Olivier cesari.pdf" download>📄 CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="accueil">
+            <h2>Développeur Cyber / Infra</h2>
+            <p>Étudiant <strong>BTS SIO SISR</strong> Ajaccio, spécialisé <strong>cybersécurité</strong> et <strong>infra réseaux</strong>.</p>
+            <p>Créateur <strong>NovaIT.fr</strong> + 7 projets : sites clients, NetBox DCIM, Unity EPITA, TryHackMe OSCP.</p>
+        </section>
+        <section>
+            <h2>Compétences</h2>
+            <ul>
+                <li>🛡️ DNS BIND9/Unbound, Ubuntu 24.04</li>
+                <li>🔒 Pentest TryHackMe, prep CEH/OSCP</li>
+                <li>🚀 WordPress/Docker, Bash/PowerShell</li>
+                <li>💻 HTML/CSS/JS, OVH/GitHub Pages</li>
+                <li>🐙 NetBox DCIM/IPAM, Proxmox</li>
+                <li>🎮 Unity3D/C# EPITA</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item"><strong>2025 →</strong> BTS SIO SISR (Ajaccio)</div>
+                <div class="timeline-item"><strong>2024-25</strong> Prépa EPITA IA/Cyber</div>
+                <div class="timeline-item"><strong>2021-24</strong> Bac STI2D (Mention AB)</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2026 Olivier Cesari | <a href="mailto:cesariolivier7@gmail.com">Email</a> | <strong>06 59 41 64 40</strong>
+    </footer>
+    <a href="CV_Olivier_Cesari.pdf" download class="fixed-cv">📄 CV</a>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+            e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+        }));
+    </script>
 </body>
 </html>

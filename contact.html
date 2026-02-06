@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Olivier Cesari BTS SIO</title>
+    <meta name="description" content="Contact Olivier Cesari BTS SIO cybersécurité Ajaccio. Stage/projet cyber/infra.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Olivier Cesari</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="Olivier cesari.pdf" download>📄 CV</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-hero">
+            <h2>Discutons Stage / Projet</h2>
+            <div class="contact-info">
+                <p><strong>📱 06 59 41 64 40</strong></p>
+                <p><a href="mailto:cesariolivier7@gmail.com">cesariolivier7@gmail.com</a></p>
+                <p>Ajaccio, Corse</p>
+            </div>
+            <form action="https://formspree.io/f/VOTRE_FORM_ID" method="POST" class="contact-form">
+                <input type="text" name="nom" placeholder="Nom / Entreprise *" required>
+                <input type="email" name="_replyto" placeholder="Email *" required>
+                <input type="_subject" value="Contact Olivier Cesari - BTS SIO" type="hidden">
+                <textarea name="message" rows="6" placeholder="Stage cyber/infra ? Projet dev ? Dites-moi tout !" required></textarea>
+                <button type="submit">Envoyer Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        © 2026 Olivier Cesari | <a href="index.html">Accueil</a>
+    </footer>
+    <script>
+        // Message succès après envoi (Formspree redirige)
+        if (window.location.search.includes('submitted')) {
+            document.querySelector('.contact-hero').innerHTML += '<p style="color:green; text-align:center;">✅ Message envoyé ! Je réponds sous 24h.</p>';
+        }
+    </script>
+</body>
+</html>
