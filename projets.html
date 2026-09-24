@@ -1,101 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Olivier Cesari BTS SIO</title>
-    <meta name="description" content="NovaIT.fr, FloperideSchool.fr, CubHosting.fr, NetBox DCIM, Jeu EPITA Unity, TryHackMe pentest, DNS BIND9.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src https://tryhackme.com; style-src 'self' https://fonts.googleapis.com;">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a1b">
+  <meta name="description" content="Projets d’Olivier Cesari en BTS SIO SISR : infrastructure réseau, NetBox, automatisation Bash et stage en informatique.">
+  <title>Projets — Olivier Cesari | BTS SIO SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Mes 7 Projets Pro</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html" class="active">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="Olivier cesari.pdf" download>📄 CV</a></li>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Olivier Cesari, accueil"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav id="navigation" class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a><a class="active" href="projets.html" aria-current="page">Projets</a><a href="contact.html">Contact</a><a class="nav-cv" href="Olivier%20cesari.pdf" target="_blank" rel="noopener">Voir mon CV ↗</a>
+      </nav>
+    </div>
+  </header>
 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Sites Web</h2>
-            <div class="projets-grid">
-                <div class="projet-card">
-                    <h3>NovaIT.fr – Mon site pro</h3>
-                    <p>Site vitrine dépannage PC/formations débutant cyber Corse. Services : réparation, ateliers phishing, hébergement.</p>
-                    <ul class="tech-list">
-                        <li>HTML/CSS/JS + WordPress</li>
-                        <li>DNS OVH multi-domaines</li>
-                        <li>Hébergement OVH/GitHub Pages</li>
-                        <li>SEO local Ajaccio</li>
-                    </ul>
-                    <div class="links"><a href="https://novait.fr" target="_blank">Visiter</a></div>
-                </div>
-                <div class="projet-card">
-                    <h3>FloperideSchool.fr – École Vélo</h3>
-                    <p>Site école surf Ajaccio (client freelance). Refonte responsive + maintenance.</p>
-                    <ul class="tech-list">
-                        <li>HTML/CSS/JS responsive</li>
-                        <li>WordPress custom</li>
-                        <li>Hébergement OVH</li>
-                    </ul>
-                    <div class="links"><a href="https://floperideschool.fr" target="_blank">Visiter</a></div>
-                </div>
-                <div class="projet-card">
-                    <h3>CubHosting.fr – Hébergement</h3>
-                    <p>Plateforme VPS/cloud/CMS. Landing + gestion infra hébergement.</p>
-                    <ul class="tech-list">
-                        <li>HTML/CSS/JS</li>
-                        <li>Gestion VPS/cloud</li>
-                        <li>SSL + sécurité</li>
-                    </ul>
-                    <div class="links"><a href="https://cubhosting.fr" target="_blank">Visiter</a></div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Dev Infra / Jeu</h2>
-            <div class="projets-grid">
-                <div class="projet-card">
-                    <h3>NetBox DCIM/IPAM</h3>
-                    <p>Inventaire réseau/serveurs perso (Proxmox/OVH). Gestion IP, câblage, docs.</p>
-                    <ul class="tech-list">
-                        <li>NetBox (Python/Django)</li>
-                        <li>PostgreSQL + Redis</li>
-                        <li>Docker, Nginx</li>
-                    </ul>
-                    <div class="links"><a href="https://netbox.dev" target="_blank">Docs NetBox</a></div>
-                </div>
-                <div class="projet-card">
-                    <h3>Jeu Vidéo EPITA Unity</h3>
-                    <p>Prototype battle royale prépa EPITA. Code privé GitHub + ZIP export.</p>
-                    <ul class="tech-list">
-                        <li>Unity3D / C#</li>
-                        <li>Assets 3D/2D</li>
-                        <li>Git privé</li>
-                    </ul>
-                    <div class="links"><a href="jeu-epita.zip" download>Télécharger ZIP</a></div>
-                </div>
-                <div class="projet-card">
-                    <h3>TryHackMe Pentest</h3>
-                    <p>Machines web/réseau/Linux. Prep OSCP/CEH.</p>
-                    <ul class="tech-list">
-                        <li>TryHackMe/Exegol</li>
-                        <li>Bash/PowerShell</li>
-                    </ul>
-                    <img src="Capture d’écran du 2026-02-06 10-57-44.png" style="border:none;" alt="Badges THM" width="100%" height="200"></img>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        © 2026 Olivier Cesari | <a href="index.html">Accueil</a> | <a href="index.html#contact">Contact</a>
-    </footer>
+  <main id="contenu">
+    <section class="page-hero container">
+      <p class="eyebrow"><span class="status-dot"></span> BTS SIO · Option SISR</p>
+      <h1>Des projets pour<br><span class="accent">comprendre l’infrastructure.</span></h1>
+      <p class="page-lede">Ma formation m’amène à concevoir, documenter et faire évoluer des environnements systèmes et réseaux. Voici les projets que je peux présenter à ce jour.</p>
+      <div class="page-meta mono"><span>01 — INFRASTRUCTURE</span><span>02 — INVENTAIRE</span><span>03 — AUTOMATISATION</span><span>04 — TERRAIN</span></div>
+    </section>
+
+    <section class="project-list container">
+      <article class="case-study" id="infrastructure">
+        <div class="case-side"><span class="case-number mono">01</span><span class="case-type">RÉSEAUX<br>PROJET ACADÉMIQUE</span><span class="case-year mono">2026</span></div>
+        <div class="case-main">
+          <p class="eyebrow">Concevoir & déployer</p>
+          <h2>Modernisation d’une infrastructure L2/L3</h2>
+          <p class="case-summary">Maquetter une infrastructure réseau et préparer le déploiement de postes pour le lycée Laetitia Bonaparte.</p>
+          <div class="case-columns">
+            <div><h3>Travail réalisé</h3><p>Configuration de commutateurs et mise en place des VLAN, du routage, de DHCP et de DNS dans Packet Tracer. Rédaction des procédures de recette et déploiement de postes sous SambaEdu4.</p></div>
+            <div><h3>Compétences mobilisées</h3><ul class="tag-list"><li>Packet Tracer</li><li>VLAN</li><li>Routage</li><li>DHCP / DNS</li><li>SambaEdu4</li><li>Documentation</li></ul></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study" id="netbox">
+        <div class="case-side"><span class="case-number mono">02</span><span class="case-type">SYSTÈMES<br>PROJET ACADÉMIQUE</span><span class="case-year mono">2026</span></div>
+        <div class="case-main">
+          <p class="eyebrow">Cartographier & documenter</p>
+          <h2>Inventaire du parc avec NetBox</h2>
+          <p class="case-summary">Recenser et modéliser le matériel de l’établissement dans un outil IPAM/DCIM afin de disposer d’une cartographie structurée de l’infrastructure.</p>
+          <div class="case-columns">
+            <div><h3>Travail réalisé</h3><p>Collecte des informations sur le parc matériel et organisation des éléments dans NetBox. Le projet m’a familiarisé avec l’importance d’un inventaire cohérent pour l’exploitation du réseau.</p></div>
+            <div><h3>Outils & notions</h3><ul class="tag-list"><li>NetBox</li><li>IPAM</li><li>DCIM</li><li>Inventaire</li><li>Documentation</li></ul></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study" id="automatisation">
+        <div class="case-side"><span class="case-number mono">03</span><span class="case-type">AUTOMATISATION<br>PROJET ACADÉMIQUE</span><span class="case-year mono">2026</span></div>
+        <div class="case-main">
+          <p class="eyebrow">Scripter & gagner du temps</p>
+          <h2>Provisionnement d’environnements web et DNS</h2>
+          <p class="case-summary">Écrire des scripts Bash pour automatiser le provisionnement d’environnements web et DNS.</p>
+          <div class="case-columns">
+            <div><h3>Objectif</h3><p>Répéter les étapes de mise en place de manière plus claire et régulière, et pratiquer l’administration Linux par script.</p></div>
+            <div><h3>Outils & notions</h3><ul class="tag-list"><li>Bash</li><li>Linux</li><li>Web</li><li>DNS</li><li>Automatisation</li></ul></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study case-study-highlight" id="stage">
+        <div class="case-side"><span class="case-number mono">04</span><span class="case-type">EXPÉRIENCE<br>STAGE</span><span class="case-year mono">MAI—JUIN 2026</span></div>
+        <div class="case-main">
+          <p class="eyebrow">CCI de Corse · Service informatique</p>
+          <h2>Technicien réseaux & systèmes</h2>
+          <p class="case-summary">Une immersion dans l’exploitation quotidienne d’un service informatique, entre infrastructure, gestion de parc et accompagnement des utilisateurs.</p>
+          <div class="case-columns">
+            <div><h3>Contributions</h3><p>Configuration et déploiement de trois stacks de commutateurs ; installation, configuration et mise en production de GLPI ; support de proximité et résolution d’incidents de niveaux 1 et 2.</p></div>
+            <div><h3>Contexte technique</h3><ul class="tag-list"><li>Commutation</li><li>Haute disponibilité</li><li>GLPI</li><li>Gestion de parc</li><li>Support N1/N2</li></ul></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container cyber-layout">
+        <div><p class="eyebrow">En parallèle / Cybersécurité</p><h2>Pratiquer dans<br>des labs dédiés.</h2><p class="section-intro">Je développe mes réflexes avec des challenges et parcours conçus pour l’apprentissage, notamment sur Root-Me et TryHackMe.</p><a class="text-link text-link-light" href="index.html#certifications">Voir mon profil & mes certifications →</a></div>
+        <div class="cyber-links">
+          <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener"><span class="mono">PROFIL / 01</span><strong>Root-Me</strong><span>OxyFifi · 500 points indiqués</span><b aria-hidden="true">↗</b></a>
+          <a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener"><span class="mono">PROFIL / 02</span><strong>TryHackMe</strong><span>RicinusCommunis · parcours en cours</span><b aria-hidden="true">↗</b></a>
+          <div class="cert-mini"><span class="mono">CERTIFICATIONS</span><p>Permis d’Osinter · Oscar Zulu<br>Cyber Security 101 · TryHackMe<br>Pre Security · TryHackMe</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section container">
+      <div><p class="eyebrow">Échangeons</p><h2>Une question sur<br>un projet ?</h2></div><a class="button button-primary" href="contact.html">Me contacter <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><a class="brand brand-footer" href="index.html"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a><p>Portfolio personnel · 2026</p><div class="footer-links"><a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me</a><a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe</a><a href="contact.html">Contact</a></div></div></footer>
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("#navigation");
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      nav.classList.toggle("is-open", !isOpen);
+    });
+  </script>
 </body>
 </html>
