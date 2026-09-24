@@ -1,59 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Olivier Cesari | BTS SIO Cybersécurité</title>
-    <meta name="description" content="Étudiant BTS SIO SISR cybersécurité Ajaccio. Projets NovaIT.fr, NetBox, TryHackMe.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a1b">
+  <meta name="description" content="Portfolio d’Olivier Cesari, étudiant en BTS SIO SISR : projets systèmes, réseaux et cybersécurité.">
+  <title>Olivier Cesari — BTS SIO SISR | Réseaux & cybersécurité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portfolio Olivier Cesari</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="Olivier cesari.pdf" download>📄 CV</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="accueil">
-            <h2>Pentester Junior</h2>
-            <p>Étudiant <strong>BTS SIO SISR</strong> Ajaccio, spécialisé <strong>cybersécurité</strong> et <strong>infra réseaux</strong>.</p>
-            <p>Créateur <strong>NovaIT.fr</strong> + 7 projets : sites clients, NetBox DCIM, Unity EPITA, TryHackMe OSCP.</p>
-        </section>
-        <section>
-            <h2>Compétences</h2>
-            <ul>
-                <li>🛡️ DNS BIND9</li>
-                <li>🔒 Pentest TryHackMe, prep SEC1</li>
-                <li>🚀 Ubuntu, kali, tails, IOS, Bash/PowerShell</li>
-                <li>💻 HTML/CSS/JS, OVH/GitHub Pages, WordPress</li>
-                <li>🐙 NetBox</li>
-                <li>🎮 Unity3D/C# </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Parcours</h2>
-            <div class="timeline">
-                <div class="timeline-item"><strong>2025 →</strong> BTS SIO SISR (Ajaccio)</div>
-                <div class="timeline-item"><strong>2024-25</strong> Prépa EPITA IA/Cyber</div>
-                <div class="timeline-item"><strong>2021-24</strong> Bac STI2D (Mention AB)</div>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Olivier Cesari, accueil">
+        <span class="brand-mark">OC</span>
+        <span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav id="navigation" class="nav" aria-label="Navigation principale">
+        <a class="active" href="index.html" aria-current="page">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cv" href="Olivier%20cesari.pdf" target="_blank" rel="noopener">Voir mon CV ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Étudiant en systèmes et réseaux</p>
+        <h1>Construire, administrer<br>et <span class="accent">sécuriser</span>.</h1>
+        <p class="hero-lede">Je m’appelle Olivier. Je prépare un BTS SIO option SISR au lycée Laetitia Bonaparte. J’aime comprendre comment les infrastructures fonctionnent — et comment mieux les protéger.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="projets.html">Découvrir mes projets <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="contact.html">Me contacter</a>
+        </div>
+        <div class="hero-links">
+          <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me <span aria-hidden="true">↗</span></a>
+          <a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Repères">
+        <div class="panel-top"><span class="mono">PROFIL / 01</span><span class="panel-signal">EN FORMATION</span></div>
+        <div class="panel-main">
+          <span class="panel-label">Parcours actuel</span>
+          <strong>BTS SIO</strong>
+          <span class="panel-track">Solutions d’infrastructure, systèmes et réseaux</span>
+        </div>
+        <div class="panel-rule"></div>
+        <div class="panel-stats">
+          <div><span class="stat-value">SISR</span><span class="stat-label">Option</span></div>
+          <div><span class="stat-value">500</span><span class="stat-label">points Root-Me*</span></div>
+        </div>
+        <p class="panel-footnote">* Score communiqué par moi-même. <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Voir mon profil ↗</a></p>
+      </aside>
+      <div class="hero-index mono" aria-hidden="true">PORTFOLIO · 2026</div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Expérience</p><h2>Du réseau au support,<br>sur le terrain.</h2></div>
+          <p class="section-intro">Mon stage à la CCI de Corse m’a permis de mettre en pratique l’administration réseau et systèmes dans un environnement professionnel.</p>
+        </div>
+        <article class="experience-card">
+          <div class="experience-date mono">MAI — JUIN 2026</div>
+          <div class="experience-content">
+            <p class="card-kicker">Stage · CCI de Corse · Service informatique</p>
+            <h3>Technicien réseaux & systèmes</h3>
+            <div class="experience-points">
+              <p><span>01</span> Configuration et déploiement de trois stacks de commutateurs pour unifier le plan de contrôle et améliorer la haute disponibilité.</p>
+              <p><span>02</span> Installation, configuration et mise en production de GLPI pour la gestion du parc.</p>
+              <p><span>03</span> Support de proximité et résolution d’incidents utilisateurs de niveaux 1 et 2.</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        © 2026 Olivier Cesari | <a href="mailto:cesariolivier7@gmail.com">Email</a> | <strong>06 59 41 64 40</strong>
-    </footer>
-    <a href="CV_Olivier_Cesari.pdf" download class="fixed-cv">📄 CV</a>
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
-            e.preventDefault(); document.querySelector(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-        }));
-    </script>
+          </div>
+          <div class="experience-aside"><span class="mono">ENVIRONNEMENT</span><span>Réseaux · Switches · GLPI · Support N1/N2</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / Domaines</p><h2>Des bases solides<br>en infrastructure.</h2></div>
+        <p class="section-intro">Une pratique construite en cours, en projets et en stage. La cybersécurité complète aujourd’hui mon parcours systèmes et réseaux.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><span class="skill-no mono">A — RÉSEAUX</span><h3>Connecter</h3><p>Commutation Cisco IOS, Aruba, HP et Huawei · VLAN 802.1Q · routage L3 · DHCP · DNS · NAT · Wireshark · Packet Tracer.</p></article>
+        <article class="skill-card"><span class="skill-no mono">B — SYSTÈMES</span><h3>Administrer</h3><p>Linux Debian et Arch · Windows Server · notions Active Directory · Proxmox VE · Docker · SambaEdu4.</p></article>
+        <article class="skill-card"><span class="skill-no mono">C — OUTILS</span><h3>Documenter & automatiser</h3><p>GLPI · NetBox IPAM/DCIM · scripts Bash · bases de Python et SQL.</p></article>
+        <article class="skill-card skill-card-accent"><span class="skill-no mono">D — CYBERSÉCURITÉ</span><h3>Explorer en laboratoire</h3><p>OSINT · Nmap · Gobuster · Hydra · Exegol · CTF et environnements d’entraînement Root-Me et TryHackMe.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading section-heading-invert">
+          <div><p class="eyebrow">03 / Projets</p><h2>Apprendre en<br>faisant.</h2></div>
+          <p class="section-intro">Réseaux, inventaire et automatisation : des réalisations liées à ma formation SISR, décrites avec leur contexte et leur objectif.</p>
+        </div>
+        <div class="project-preview-grid">
+          <a class="project-preview" href="projets.html#infrastructure"><span class="mono">PROJET 01 · RÉSEAUX</span><strong>Modernisation L2/L3</strong><span>Maquette, VLAN, routage et déploiement de postes.</span><span class="preview-arrow">↗</span></a>
+          <a class="project-preview" href="projets.html#netbox"><span class="mono">PROJET 02 · IPAM/DCIM</span><strong>Cartographie avec NetBox</strong><span>Recenser et modéliser un parc matériel.</span><span class="preview-arrow">↗</span></a>
+          <a class="project-preview" href="projets.html#automatisation"><span class="mono">PROJET 03 · BASH</span><strong>Automatiser le provisionnement</strong><span>Environnements web et DNS.</span><span class="preview-arrow">↗</span></a>
+        </div>
+        <a class="text-link text-link-light" href="projets.html">Voir tous les projets <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <div><p class="eyebrow">04 / Engagement & pratique</p><h2>La sécurité se<br>partage aussi.</h2></div>
+        <p class="section-intro">Je m’intéresse autant à la technique qu’à la transmission des bons usages numériques.</p>
+      </div>
+      <div class="two-up">
+        <article class="feature-card">
+          <span class="feature-symbol" aria-hidden="true">↗</span>
+          <p class="card-kicker">Formateur · Lumérique</p>
+          <h3>Sensibiliser aux usages d’Internet</h3>
+          <p>J’anime des actions de sensibilisation à Internet auprès de publics allant de l’école primaire au lycée.</p>
+        </article>
+        <article class="feature-card feature-card-outline">
+          <span class="feature-symbol" aria-hidden="true">⌁</span>
+          <p class="card-kicker">Entraînement continu</p>
+          <h3>Root-Me & TryHackMe</h3>
+          <p>Je pratique les challenges et parcours de cybersécurité dans des environnements conçus pour l’entraînement.</p>
+          <div class="inline-links"><a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me ↗</a><a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-cert">
+      <div class="container cert-layout">
+        <div><p class="eyebrow">05 / Certifications</p><h2>Repères de<br>formation cyber.</h2></div>
+        <ul class="cert-list">
+          <li><span>Permis d’Osinter</span><span class="cert-source">Oscar Zulu</span></li>
+          <li><span>Cyber Security 101</span><span class="cert-source">TryHackMe</span></li>
+          <li><span>Pre Security</span><span class="cert-source">TryHackMe</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-section container">
+      <div><p class="eyebrow">Et maintenant ?</p><h2>Parlons systèmes,<br>réseaux ou cyber.</h2></div>
+      <a class="button button-primary" href="contact.html">Me contacter <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row"><a class="brand brand-footer" href="index.html"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a><p>Portfolio personnel · 2026</p><div class="footer-links"><a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me</a><a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe</a><a href="contact.html">Contact</a></div></div>
+  </footer>
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("#navigation");
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      nav.classList.toggle("is-open", !isOpen);
+    });
+  </script>
 </body>
 </html>
