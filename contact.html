@@ -1,50 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Olivier Cesari BTS SIO</title>
-    <meta name="description" content="Contact Olivier Cesari BTS SIO cybersécurité Ajaccio. Stage/projet cyber/infra.">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a1b">
+  <meta name="description" content="Contacter Olivier Cesari, étudiant en BTS SIO SISR, pour une alternance ou un échange autour des systèmes, réseaux et cybersécurité.">
+  <title>Contact — Olivier Cesari | BTS SIO SISR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Olivier Cesari</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="Olivier cesari.pdf" download>📄 CV</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact-hero">
-            <h2>Discutons Stage / Projet</h2>
-            <div class="contact-info">
-                <p><strong>📱 06 59 41 64 40</strong></p>
-                <p><a href="mailto:cesariolivier7@gmail.com">cesariolivier7@gmail.com</a></p>
-                <p>Ajaccio, Corse</p>
-            </div>
-            <form action="https://formspree.io/f/VOTRE_FORM_ID" method="POST" class="contact-form">
-                <input type="text" name="nom" placeholder="Nom / Entreprise *" required>
-                <input type="email" name="_replyto" placeholder="Email *" required>
-                <input type="_subject" value="Contact Olivier Cesari - BTS SIO" type="hidden">
-                <textarea name="message" rows="6" placeholder="Stage cyber/infra ? Projet dev ? Dites-moi tout !" required></textarea>
-                <button type="submit">Envoyer Message</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        © 2026 Olivier Cesari | <a href="index.html">Accueil</a>
-    </footer>
-    <script>
-        // Message succès après envoi (Formspree redirige)
-        if (window.location.search.includes('submitted')) {
-            document.querySelector('.contact-hero').innerHTML += '<p style="color:green; text-align:center;">✅ Message envoyé ! Je réponds sous 24h.</p>';
-        }
-    </script>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Olivier Cesari, accueil"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav id="navigation" class="nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a><a href="projets.html">Projets</a><a class="active" href="contact.html" aria-current="page">Contact</a><a class="nav-cv" href="Olivier%20cesari.pdf" target="_blank" rel="noopener">Voir mon CV ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <section class="contact-page container">
+      <div class="contact-intro">
+        <p class="eyebrow"><span class="status-dot"></span> Contact / Échange</p>
+        <h1>Construisons<br>la suite <span class="accent">ensemble.</span></h1>
+        <p class="page-lede">Je prépare un BTS SIO SISR et recherche une alternance pour ma deuxième année. Si mon parcours en systèmes, réseaux et cybersécurité vous intéresse, écrivez-moi.</p>
+        <a class="button button-primary" href="mailto:cesariolivier7@gmail.com?subject=Contact%20depuis%20mon%20portfolio">Écrire un e-mail <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="contact-details">
+        <div class="contact-detail"><span class="mono">E-MAIL</span><a href="mailto:cesariolivier7@gmail.com">cesariolivier7@gmail.com</a></div>
+        <div class="contact-detail"><span class="mono">LOCALISATION</span><span>Ajaccio · Corse</span></div>
+        <div class="contact-detail"><span class="mono">PROFILS & PRATIQUE</span><div class="contact-socials"><a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me ↗</a><a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe ↗</a></div></div>
+        <div class="contact-detail"><span class="mono">CV</span><a href="Olivier%20cesari.pdf" target="_blank" rel="noopener">Ouvrir mon CV PDF ↗</a></div>
+      </div>
+    </section>
+    <section class="contact-note container">
+      <p class="eyebrow">Ce qui m’intéresse</p>
+      <h2>Les infrastructures bien pensées,<br>et leur sécurité au quotidien.</h2>
+      <p>Administration systèmes et réseaux, support, documentation, automatisation et sensibilisation aux usages d’Internet.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-row"><a class="brand brand-footer" href="index.html"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a><p>Portfolio personnel · 2026</p><div class="footer-links"><a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me</a><a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe</a><a href="projets.html">Projets</a></div></div></footer>
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("#navigation");
+    menuButton.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      nav.classList.toggle("is-open", !isOpen);
+    });
+  </script>
 </body>
 </html>
