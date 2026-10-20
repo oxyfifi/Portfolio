@@ -366,3 +366,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   .feature-card { min-height: 0; padding: 22px; }
   .cta-section { padding-block: 48px; }
 }
+
+/* Empêcher le débordement horizontal des éléments décoratifs */
+body { overflow-x: clip; }
