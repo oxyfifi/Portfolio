@@ -389,3 +389,40 @@ html, body { max-width: 100%; overflow-x: hidden; }
   .tag-list li { font-size: 10px; }
   .lab-achievements p { font-size: 11px; }
 }
+
+/* Corps de texte à taille confortable, inspiré des échelles de lecture courantes */
+.section-intro,
+.case-summary,
+.case-columns p,
+.skill-card p,
+.experience-points p,
+.feature-card > p:last-of-type,
+.lab-node > span:last-child,
+.lab-workload p,
+.lab-achievements p,
+.contact-detail > a,
+.contact-detail > span:not(.mono) {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.case-details summary { font-size: 14px; }
+.tag-list li { font-size: 12px; }
+.lab-node-label { font-size: 11px; }
+.lab-caption { font-size: 13px; }
+.lab-achievements .mono { font-size: 10px; }
+.experience-points p { line-height: 1.55; }
+.skill-card p { line-height: 1.6; }
+@media (max-width: 680px) {
+  .section-intro,
+  .case-summary,
+  .case-columns p,
+  .skill-card p,
+  .experience-points p,
+  .feature-card > p:last-of-type,
+  .lab-node > span:last-child,
+  .lab-workload p,
+  .lab-achievements p,
+  .contact-detail > a,
+  .contact-detail > span:not(.mono) { font-size: 16px; }
+  .tag-list li { font-size: 12px; }
+}
