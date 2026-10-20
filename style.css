@@ -426,3 +426,35 @@ html, body { max-width: 100%; overflow-x: hidden; }
   .contact-detail > span:not(.mono) { font-size: 16px; }
   .tag-list li { font-size: 12px; }
 }
+
+/* Texte courant plus confortable, notamment dans les détails de projet */
+.section-intro,
+.case-summary,
+.case-columns p,
+.experience-points p,
+.feature-card > p:last-of-type,
+.lab-node > span:last-child,
+.lab-workload p,
+.lab-achievements p {
+  font-size: 18px;
+  line-height: 1.65;
+}
+.skill-card p,
+.contact-detail > a,
+.contact-detail > span:not(.mono) { font-size: 16px; line-height: 1.65; }
+.lab-caption { font-size: 14px; }
+.tag-list li { font-size: 13px; }
+@media (max-width: 680px) {
+  .section-intro,
+  .case-summary,
+  .case-columns p,
+  .experience-points p,
+  .feature-card > p:last-of-type,
+  .lab-node > span:last-child,
+  .lab-workload p,
+  .lab-achievements p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .tag-list li { font-size: 12px; }
+}
