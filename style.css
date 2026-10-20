@@ -96,7 +96,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .skill-card-accent .skill-no, .skill-card-accent h3 { color: var(--accent); }
 
 .section-heading-invert .section-intro { color: #98aaa3; }
-.project-preview-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
+.project-preview-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-block: 1px solid var(--line); }
 .project-preview { position: relative; display: flex; min-height: 205px; flex-direction: column; gap: 11px; padding: 24px 25px 28px 0; border-right: 1px solid var(--line); text-decoration: none; }
 .project-preview + .project-preview { padding-left: 25px; }
 .project-preview:last-child { border-right: 0; }
@@ -225,7 +225,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   .skill-card:nth-child(2) { border-right: 0; }
   .skill-card:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .case-study { grid-template-columns: 120px 1fr; gap: 30px; }
-  .lab-achievements { grid-template-columns: repeat(2, 1fr); }
+  .project-preview-grid { grid-template-columns: repeat(2, 1fr); }\n  .project-preview:nth-child(2) { padding-right: 0; border-right: 0; }\n  .project-preview:nth-child(3) { padding-left: 0; border-top: 1px solid var(--line); }\n  .project-preview:nth-child(4) { border-top: 1px solid var(--line); }\n  .lab-achievements { grid-template-columns: repeat(2, 1fr); }
   .lab-achievements article:nth-child(2) { border-right: 0; }
   .lab-achievements article:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   .contact-page { gap: 55px; }
@@ -254,7 +254,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   .skill-card, .skill-card:nth-child(2) { min-height: 0; padding: 22px; border-right: 0; border-bottom: 1px solid var(--line); }
   .skill-card:last-child { border-bottom: 0; }
   .skill-card h3 { margin-top: 15px; }
-  .project-preview-grid { grid-template-columns: 1fr; }
+  .project-preview-grid { grid-template-columns: 1fr; }\n  .project-preview:nth-child(n) { padding-left: 0; border-top: 0; }
   .project-preview, .project-preview + .project-preview { min-height: 150px; padding: 22px 35px 22px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .project-preview:last-child { border-bottom: 0; }
   .project-preview strong { margin-top: 8px; }
