@@ -307,3 +307,62 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Mise en page plus compacte */
+@media (min-width: 681px) {
+  .hero { min-height: 510px; padding-block: 72px; }
+  .section { padding-block: 70px; }
+  .page-hero { padding-top: 66px; padding-bottom: 38px; }
+  .case-study { padding-block: 28px; }
+  .case-study-highlight { padding-block: 28px; }
+  .contact-page { min-height: 450px; padding-block: 50px; }
+  .contact-note { margin-bottom: 50px; padding: 28px; }
+}
+.section-heading { margin-bottom: 30px; }
+.skill-card { min-height: 0; padding: 22px 20px; }
+.skill-card h3 { margin-top: 16px; }
+.project-preview { min-height: 175px; }
+.lab-achievements { margin-top: 22px; }
+.lab-achievements article { min-height: 0; padding: 15px; }
+.lab-achievements h3 { margin: 9px 0 4px; }
+.lab-achievements p { line-height: 1.5; }
+.case-summary { margin-bottom: 14px; }
+.case-details { border-top: 1px solid var(--line); }
+.case-details summary {
+  width: fit-content;
+  padding: 10px 0;
+  color: var(--accent);
+  font: 10px var(--mono);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  cursor: pointer;
+}
+.case-details summary:hover { color: var(--ink); }
+.case-details[open] summary { margin-bottom: 8px; }
+.case-details .case-columns { padding-top: 16px; }
+
+@media (max-width: 680px) {
+  .hero { gap: 28px; padding-top: 48px; padding-bottom: 50px; }
+  .section { padding-block: 46px; }
+  .section-heading { gap: 13px; margin-bottom: 22px; }
+  .page-hero { padding-top: 48px; padding-bottom: 28px; }
+  .page-meta { margin-top: 22px; }
+  .case-study { padding-block: 23px; }
+  .contact-page { gap: 32px; padding-block: 48px; }
+  .contact-note { margin-bottom: 36px; padding: 20px; }
+  .lab-achievements { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lab-achievements article,
+  .lab-achievements article:nth-child(2) {
+    min-height: 0;
+    padding: 14px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .lab-achievements article:nth-child(2n) { border-right: 0; }
+  .lab-achievements article:nth-last-child(-n+2) { border-bottom: 0; }
+  .lab-achievements h3 { font-size: 13px; }
+  .lab-achievements p { font-size: 9px; }
+  .experience-points { margin-top: 14px; }
+  .feature-card { min-height: 0; padding: 22px; }
+  .cta-section { padding-block: 48px; }
+}
