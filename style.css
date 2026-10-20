@@ -371,3 +371,21 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 html, body { max-width: 100%; overflow-x: hidden; }
 .hero { overflow-x: clip; }
 .hero::before { right: 0; }
+
+/* Lisibilité des contenus de projet */
+.case-details summary { font-size: 12px; }
+.case-columns p { font-size: 14px; line-height: 1.65; }
+.tag-list li { font-size: 10px; }
+.lab-node-label { font-size: 10px; }
+.lab-node > span:last-child { font-size: 12px; }
+.lab-workload p { font-size: 12px; }
+.lab-caption { font-size: 11px; }
+.lab-achievements .mono { font-size: 9px; }
+.lab-achievements p { font-size: 12px; line-height: 1.6; }
+.skill-card p { font-size: 13px; line-height: 1.7; }
+
+@media (max-width: 680px) {
+  .case-columns p { font-size: 14px; }
+  .tag-list li { font-size: 10px; }
+  .lab-achievements p { font-size: 11px; }
+}
