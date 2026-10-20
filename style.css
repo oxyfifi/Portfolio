@@ -367,5 +367,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   .cta-section { padding-block: 48px; }
 }
 
-/* Empêcher le débordement horizontal des éléments décoratifs */
-body { overflow-x: clip; }
+/* Garder les effets décoratifs dans la largeur de la page */
+html, body { max-width: 100%; overflow-x: hidden; }
+.hero { overflow-x: clip; }
+.hero::before { right: 0; }
