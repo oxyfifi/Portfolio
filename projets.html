@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101a1b">
-  <meta name="description" content="Projets d’Olivier Cesari en BTS SIO SISR : infrastructure réseau, NetBox, automatisation Bash et stage en informatique.">
+  <meta name="description" content="Projets d’Olivier Cesari en BTS SIO SISR : Home Lab Proxmox VE, infrastructure réseau, NetBox, automatisation Bash et stage.">
   <title>Projets — Olivier Cesari | BTS SIO SISR</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,53 @@
       <p class="eyebrow"><span class="status-dot"></span> BTS SIO · Option SISR</p>
       <h1>Des projets pour<br><span class="accent">comprendre l’infrastructure.</span></h1>
       <p class="page-lede">Ma formation m’amène à concevoir, documenter et faire évoluer des environnements systèmes et réseaux. Voici les projets que je peux présenter à ce jour.</p>
-      <div class="page-meta mono"><span>01 — INFRASTRUCTURE</span><span>02 — INVENTAIRE</span><span>03 — AUTOMATISATION</span><span>04 — TERRAIN</span></div>
+      <div class="page-meta mono"><span>HOME LAB</span><span>01 — INFRASTRUCTURE</span><span>02 — INVENTAIRE</span><span>03 — AUTOMATISATION</span><span>04 — TERRAIN</span></div>
+    </section>
+
+        <section class="section section-dark home-lab-section" id="home-lab">
+      <div class="container">
+        <div class="section-heading section-heading-invert">
+          <div><p class="eyebrow">Lab personnel / Architecture</p><h2 id="home-lab-title">Mon Home Lab</h2></div>
+          <p class="section-intro">Un PC portable et un serveur NAS construit autour d’un mini-PC sous Proxmox VE. Le lab me permet d’héberger Nextcloud et de travailler avec des machines virtuelles.</p>
+        </div>
+
+        <div class="lab-topology" aria-label="Schéma simplifié du Home Lab">
+          <article class="lab-node">
+            <span class="lab-node-label mono">POSTE</span>
+            <strong>PC portable</strong>
+            <span>Poste de travail</span>
+          </article>
+          <div class="lab-link" aria-label="Connexion Ethernet RJ45">
+            <span class="mono">RJ45</span><span class="lab-link-line" aria-hidden="true"></span>
+          </div>
+          <article class="lab-node lab-switch">
+            <span class="lab-node-label mono">COMMUTATION</span>
+            <strong>Aruba 2930F</strong>
+            <span>Switch</span>
+          </article>
+        </div>
+
+        <div class="lab-downlink" aria-hidden="true"><span>Réseau local</span></div>
+
+        <article class="lab-host">
+          <div class="lab-host-head">
+            <div><span class="lab-node-label mono">SERVEUR & NAS</span><h3>Mini-PC · Proxmox VE</h3><p>Hôte de virtualisation et de stockage</p></div>
+            <div class="lab-storage"><span class="mono">STOCKAGE AJOUTÉ</span><strong>~4 To</strong></div>
+          </div>
+          <div class="lab-workloads">
+            <div class="lab-workload"><span class="lab-node-label mono">SERVICE</span><strong>Nextcloud</strong><p>Service hébergé sur le serveur</p></div>
+            <div class="lab-workload"><span class="lab-node-label mono">MACHINES VIRTUELLES</span><strong>Kali · Windows</strong><p>Environnements de travail virtualisés</p></div>
+          </div>
+        </article>
+        <p class="lab-caption">Vue d’ensemble simplifiée, d’après les éléments communiqués. Les adresses et détails du réseau privé ne sont pas affichés.</p>
+
+        <div class="lab-achievements">
+          <article><span class="mono">01 / VIRTUALISATION</span><h3>Installer Proxmox VE</h3><p>Transformer le mini-PC en hôte pour plusieurs machines virtuelles.</p></article>
+          <article><span class="mono">02 / SERVICE</span><h3>Héberger Nextcloud</h3><p>Mettre en place un service personnel dans le Home Lab.</p></article>
+          <article><span class="mono">03 / LABS</span><h3>Créer des VM</h3><p>Disposer d’environnements Kali et Windows pour les usages du lab.</p></article>
+          <article><span class="mono">04 / STOCKAGE</span><h3>Ajouter environ 4 To</h3><p>Étendre la capacité de stockage du serveur et NAS.</p></article>
+        </div>
+      </div>
     </section>
 
     <section class="project-list container">
