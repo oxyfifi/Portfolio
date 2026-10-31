@@ -4,149 +4,418 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101a1b">
-  <meta name="description" content="Projets d’Olivier Cesari en BTS SIO SISR : Home Lab Proxmox VE, infrastructure réseau, NetBox, automatisation Bash et stage.">
-  <title>Projets — Olivier Cesari | BTS SIO SISR</title>
+  <title>Projets & Réalisations — Olivier Cesari | BTS SIO SISR</title>
+  <meta name="description" content="Projets techniques d’Olivier Cesari en BTS SIO SISR : Home Lab Proxmox VE, infrastructure réseau L2/L3, inventaire NetBox, scripts Bash et stage CCI de Corse.">
+  <link rel="canonical" href="https://portfolio.novait.fr/projets.html">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio.novait.fr/projets.html">
+  <meta property="og:title" content="Projets & Réalisations — Olivier Cesari | BTS SIO SISR">
+  <meta property="og:description" content="Découvrez mes projets d'infrastructure : Home Lab Proxmox VE, modernisation réseau L2/L3, NetBox, automatisation Bash et retours de stage.">
+  <meta property="og:image" content="https://portfolio.novait.fr/og-preview.png">
+  <meta property="og:locale" content="fr_FR">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projets & Réalisations — Olivier Cesari | BTS SIO SISR">
+  <meta name="twitter:description" content="Projets techniques en systèmes, réseaux et cybersécurité par Olivier Cesari.">
+  <meta name="twitter:image" content="https://portfolio.novait.fr/og-preview.png">
+
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20261020-compact6">
+  <link rel="stylesheet" href="style.css?v=20261031-pro">
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="Olivier Cesari, accueil"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a>
+      <a class="brand" href="index.html" aria-label="Olivier Cesari, accueil">
+        <span class="brand-mark">OC</span>
+        <span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span>
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
       <nav id="navigation" class="nav" aria-label="Navigation principale">
-        <a href="index.html">Accueil</a><a class="active" href="projets.html" aria-current="page">Projets</a><a href="contact.html">Contact</a><a class="nav-cv" href="Olivier%20cesari.pdf" target="_blank" rel="noopener">Voir mon CV ↗</a>
+        <a href="index.html">Accueil</a>
+        <a class="active" href="projets.html" aria-current="page">Projets</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cv" href="CV-Olivier-Cesari.pdf" target="_blank" rel="noopener">📄 Mon CV (PDF) ↗</a>
       </nav>
     </div>
   </header>
 
   <main id="contenu">
     <section class="page-hero container">
-      <p class="eyebrow"><span class="status-dot"></span> BTS SIO · Option SISR</p>
-      <h1>Des projets pour<br><span class="accent">comprendre l’infrastructure.</span></h1>
-      <p class="page-lede">Ma formation m’amène à concevoir, documenter et faire évoluer des environnements systèmes et réseaux. Voici les projets que je peux présenter à ce jour.</p>
-      <div class="page-meta mono"><span>HOME LAB</span><span>01 — INFRASTRUCTURE</span><span>02 — INVENTAIRE</span><span>03 — AUTOMATISATION</span><span>04 — TERRAIN</span></div>
+      <p class="eyebrow"><span class="status-dot pulse"></span> BTS SIO · Option SISR · Projets techniques</p>
+      <h1>Des réalisations pour<br><span class="accent">éprouver l’infrastructure.</span></h1>
+      <p class="page-lede">Ma formation m’amène à concevoir, déployer, documenter et superviser des environnements systèmes et réseaux. Voici les projets académiques, professionnels et personnels qui illustrent mes compétences.</p>
+      <div class="page-meta mono">
+        <a href="#home-lab">00 — HOME LAB</a>
+        <a href="#infrastructure">01 — RÉSEAUX L2/L3</a>
+        <a href="#netbox">02 — INVENTAIRE NETBOX</a>
+        <a href="#automatisation">03 — AUTOMATISATION BASH</a>
+        <a href="#stage">04 — STAGE CCI</a>
+        <a href="#novait">05 — NOVA IT</a>
+        <a href="#cyber-lab">06 — LABS CYBER</a>
+      </div>
     </section>
 
-        <section class="section section-dark home-lab-section" id="home-lab">
+    <!-- PROJET 00 : HOME LAB -->
+    <section class="section section-dark home-lab-section" id="home-lab">
       <div class="container">
         <div class="section-heading section-heading-invert">
-          <div><p class="eyebrow">Lab personnel / Architecture</p><h2 id="home-lab-title">Mon Home Lab</h2></div>
-          <p class="section-intro">Un PC portable et un serveur NAS construit autour d’un mini-PC sous Proxmox VE. Le lab me permet d’héberger Nextcloud et de travailler avec des machines virtuelles.</p>
+          <div><p class="eyebrow">Lab personnel / Architecture & Virtualisation</p><h2 id="home-lab-title">Mon Home Lab</h2></div>
+          <p class="section-intro">Un banc d'essai complet à domicile pour expérimenter l'auto-hébergement, la virtualisation Proxmox VE, la segmentation réseau et la résilience du stockage.</p>
         </div>
 
-        <div class="lab-topology" aria-label="Schéma simplifié du Home Lab">
+        <div class="lab-topology" aria-label="Schéma de l’architecture du Home Lab">
           <article class="lab-node">
-            <span class="lab-node-label mono">POSTE</span>
+            <span class="lab-node-label mono">POSTE CLIENT</span>
             <strong>PC portable</strong>
-            <span>Poste de travail</span>
+            <span>Station d'administration & de diagnostic</span>
           </article>
-          <div class="lab-link" aria-label="Connexion Ethernet RJ45">
-            <span class="mono">RJ45</span><span class="lab-link-line" aria-hidden="true"></span>
+          <div class="lab-link" aria-label="Liaison Gigabit Ethernet">
+            <span class="mono">RJ45 1GbE</span>
+            <span class="lab-link-line" aria-hidden="true"></span>
           </div>
           <article class="lab-node lab-switch">
-            <span class="lab-node-label mono">COMMUTATION</span>
+            <span class="lab-node-label mono">COMMUTATION MANAGEABLE</span>
             <strong>Aruba 2930F</strong>
-            <span>Switch</span>
+            <span>Switch manageable · VLANs & QoS</span>
           </article>
         </div>
 
-        <div class="lab-downlink" aria-hidden="true"><span>Réseau local</span></div>
+        <div class="lab-downlink" aria-hidden="true"><span>Liaison réseau local</span></div>
 
         <article class="lab-host">
           <div class="lab-host-head">
-            <div><span class="lab-node-label mono">SERVEUR & NAS</span><h3>Mini-PC · Proxmox VE</h3><p>Hôte de virtualisation et de stockage</p></div>
-            <div class="lab-storage"><span class="mono">STOCKAGE AJOUTÉ</span><strong>~4 To</strong></div>
+            <div>
+              <span class="lab-node-label mono">SERVEUR HÔTE & STOCKAGE</span>
+              <h3>Mini-PC · Hyperviseur Proxmox VE</h3>
+              <p>Virtualisation de machines d'apprentissage et services réseau</p>
+            </div>
+            <div class="lab-storage">
+              <span class="mono">CAPACITÉ AJOUTÉE</span>
+              <strong>~4 To</strong>
+            </div>
           </div>
           <div class="lab-workloads">
-            <div class="lab-workload"><span class="lab-node-label mono">SERVICE</span><strong>Nextcloud</strong><p>Service hébergé sur le serveur</p></div>
-            <div class="lab-workload"><span class="lab-node-label mono">MACHINES VIRTUELLES</span><strong>Kali · Windows</strong><p>Environnements de travail virtualisés</p></div>
+            <div class="lab-workload">
+              <span class="lab-node-label mono">SERVICE AUTO-HÉBERGÉ</span>
+              <strong>Nextcloud Hub</strong>
+              <p>Synchronisation de fichiers sécurisée, accès distant et sauvegardes régulières.</p>
+            </div>
+            <div class="lab-workload">
+              <span class="lab-node-label mono">ENVIRONNEMENTS DE TEST</span>
+              <strong>VM Kali Linux & Windows</strong>
+              <p>Laboratoires d'expérimentation isolés pour l'audit et l'administration système.</p>
+            </div>
           </div>
         </article>
-        <p class="lab-caption">Vue d’ensemble simplifiée, d’après les éléments communiqués. Les adresses et détails du réseau privé ne sont pas affichés.</p>
+        <p class="lab-caption">Vue d’ensemble synthétique. La segmentation réseau et le plan d'adressage IP privé sont gérés localement.</p>
 
         <div class="lab-achievements">
-          <article><span class="mono">01 / VIRTUALISATION</span><h3>Installer Proxmox VE</h3><p>Transformer le mini-PC en hôte pour plusieurs machines virtuelles.</p></article>
-          <article><span class="mono">02 / SERVICE</span><h3>Héberger Nextcloud</h3><p>Mettre en place un service personnel dans le Home Lab.</p></article>
-          <article><span class="mono">03 / LABS</span><h3>Créer des VM</h3><p>Disposer d’environnements Kali et Windows pour les usages du lab.</p></article>
-          <article><span class="mono">04 / STOCKAGE</span><h3>Ajouter environ 4 To</h3><p>Étendre la capacité de stockage du serveur et NAS.</p></article>
+          <article>
+            <span class="mono">01 / HYPERVISION</span>
+            <h3>Proxmox VE</h3>
+            <p>Installation bare-metal, gestion fine des ressources RAM/CPU et snapshots avant mises à jour.</p>
+          </article>
+          <article>
+            <span class="mono">02 / SERVICES</span>
+            <h3>Nextcloud</h3>
+            <p>Déploiement d'une solution de cloud privé pour centraliser la documentation et les sauvegardes.</p>
+          </article>
+          <article>
+            <span class="mono">03 / SÉPARATION</span>
+            <h3>VMs de lab</h3>
+            <p>Cloisonnement d'environnements Kali Linux pour les exercices CTF et Windows pour les tests AD.</p>
+          </article>
+          <article>
+            <span class="mono">04 / RÉSILIENCE</span>
+            <h3>Stockage 4 To</h3>
+            <p>Extension de la capacité de stockage et mise en place de politiques de sauvegarde.</p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- LISTE DES PROJETS DÉTAILLÉS -->
     <section class="project-list container">
+
+      <!-- PROJET 01 : MODERNISATION L2/L3 -->
       <article class="case-study" id="infrastructure">
-        <div class="case-side"><span class="case-number mono">01</span><span class="case-type">RÉSEAUX<br>PROJET ACADÉMIQUE</span><span class="case-year mono">2026</span></div>
+        <div class="case-side">
+          <span class="case-number mono">01</span>
+          <span class="case-type">RÉSEAUX & SYSTÈMES<br>PROJET ACADÉMIQUE</span>
+          <span class="case-year mono">2026</span>
+        </div>
         <div class="case-main">
-          <p class="eyebrow">Concevoir & déployer</p>
-          <h2>Modernisation d’une infrastructure L2/L3</h2>
-          <p class="case-summary">Maquetter une infrastructure réseau et préparer le déploiement de postes pour le lycée Laetitia Bonaparte.</p>
-          <details class="case-details"><summary>Voir le détail du projet</summary><div class="case-columns">
-            <div><h3>Travail réalisé</h3><p>Configuration de commutateurs et mise en place des VLAN, du routage, de DHCP et de DNS dans Packet Tracer. Rédaction des procédures de recette et déploiement de postes sous SambaEdu4.</p></div>
-            <div><h3>Compétences mobilisées</h3><ul class="tag-list"><li>Packet Tracer</li><li>VLAN</li><li>Routage</li><li>DHCP / DNS</li><li>SambaEdu4</li><li>Documentation</li></ul></div>
-          </div></details>
+          <p class="eyebrow">Concevoir, segmenter & déployer</p>
+          <h2>Modernisation d’une infrastructure réseau L2/L3</h2>
+          <p class="case-summary">Maquettage complet d'une refonte réseau d'établissement sous Packet Tracer, découpage en VLANs, routage inter-VLAN et déploiement de postes sous SambaEdu4.</p>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Contexte & Travail réalisé</h3>
+                <p>Pour répondre aux besoins de modularité et de sécurité d'un parc pédagogique, j'ai conçu et validé une maquette réseau complète sur Cisco Packet Tracer :</p>
+                <ul class="case-bullet-list">
+                  <li><strong>Segmentation VLAN (802.1Q) :</strong> Séparation étanche des flux administratifs, enseignants, élèves et serveurs.</li>
+                  <li><strong>Routage L3 & Services IP :</strong> Configuration du routage inter-VLAN (Router-on-a-stick / commutateurs L3), relais DHCP (IP helper-address) et résolveurs DNS.</li>
+                  <li><strong>Déploiement SambaEdu4 :</strong> Préparation et intégration de postes clients au domaine SambaEdu4 pour la gestion centralisée des sessions utilisateurs.</li>
+                  <li><strong>Recette & Documentation :</strong> Rédaction du cahier de tests, vérification de l'isolation des réseaux et des politiques de filtrage.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Compétences & Outils</h3>
+                <ul class="tag-list">
+                  <li>Cisco Packet Tracer</li>
+                  <li>VLANs 802.1Q</li>
+                  <li>Routage L3</li>
+                  <li>DHCP & DNS</li>
+                  <li>SambaEdu4</li>
+                  <li>Cahier de recette</li>
+                  <li>Wireshark</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </article>
 
+      <!-- PROJET 02 : NETBOX -->
       <article class="case-study" id="netbox">
-        <div class="case-side"><span class="case-number mono">02</span><span class="case-type">SYSTÈMES<br>PROJET ACADÉMIQUE</span><span class="case-year mono">2026</span></div>
+        <div class="case-side">
+          <span class="case-number mono">02</span>
+          <span class="case-type">CARTOGRAPHIE & DCIM<br>PROJET ACADÉMIQUE</span>
+          <span class="case-year mono">2026</span>
+        </div>
         <div class="case-main">
-          <p class="eyebrow">Cartographier & documenter</p>
-          <h2>Inventaire du parc avec NetBox</h2>
-          <p class="case-summary">Recenser et modéliser le matériel de l’établissement dans un outil IPAM/DCIM afin de disposer d’une cartographie structurée de l’infrastructure.</p>
-          <details class="case-details"><summary>Voir le détail du projet</summary><div class="case-columns">
-            <div><h3>Travail réalisé</h3><p>Collecte des informations sur le parc matériel et organisation des éléments dans NetBox. Le projet m’a familiarisé avec l’importance d’un inventaire cohérent pour l’exploitation du réseau.</p></div>
-            <div><h3>Outils & notions</h3><ul class="tag-list"><li>NetBox</li><li>IPAM</li><li>DCIM</li><li>Inventaire</li><li>Documentation</li></ul></div>
-          </div></details>
+          <p class="eyebrow">Cartographier, référencer & documenter</p>
+          <h2>Inventaire et cartographie du parc avec NetBox</h2>
+          <p class="case-summary">Modélisation centralisée du parc matériel, des baies de brassage, des plages d'adressage IP et des interconnexions au sein de l’outil IPAM/DCIM NetBox.</p>
+          <div class="case-media">
+            <img src="images/ImageNetbox.webp" alt="Logo et interface de modélisation NetBox" class="project-img-thumb" loading="lazy">
+          </div>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Contexte & Travail réalisé</h3>
+                <p>Face à la dispersion des données d'inventaire sur des feuilles de calcul statiques, l'objectif était d'instaurer une "Source Unique de Vérité" (Single Source of Truth) :</p>
+                <ul class="case-bullet-list">
+                  <li><strong>Gestion IPAM :</strong> Découpage et modélisation hiérarchique des sous-réseaux IPv4 (/24, /26, adresses réservées, passerelles, passerelles VRRP).</li>
+                  <li><strong>Gestion DCIM :</strong> Définition des sites, pièces, racks 19 pouces, positions en unité U et équipements actifs (switches, routeurs, serveurs).</li>
+                  <li><strong>Câblage & Liaisons :</strong> Renseignement des liaisons cuivre/fibre entre baies et brassage vers les prises murales.</li>
+                  <li><strong>Bénéfice immédiat :</strong> Accélération drastique du diagnostic d'incident et planification facilitée des extensions réseau.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Outils & Notions</h3>
+                <ul class="tag-list">
+                  <li>NetBox</li>
+                  <li>IPAM (Gestion IP)</li>
+                  <li>DCIM (Racks & Baies)</li>
+                  <li>Plan d'adressage</li>
+                  <li>Documentation d'infra</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </article>
 
+      <!-- PROJET 03 : AUTOMATISATION BASH -->
       <article class="case-study" id="automatisation">
-        <div class="case-side"><span class="case-number mono">03</span><span class="case-type">AUTOMATISATION<br>PROJET ACADÉMIQUE</span><span class="case-year mono">2026</span></div>
+        <div class="case-side">
+          <span class="case-number mono">03</span>
+          <span class="case-type">SYSTÈMES & AUTOMATISATION<br>PROJET ACADÉMIQUE</span>
+          <span class="case-year mono">2026</span>
+        </div>
         <div class="case-main">
-          <p class="eyebrow">Scripter & gagner du temps</p>
-          <h2>Provisionnement d’environnements web et DNS</h2>
-          <p class="case-summary">Écrire des scripts Bash pour automatiser le provisionnement d’environnements web et DNS.</p>
-          <details class="case-details"><summary>Voir le détail du projet</summary><div class="case-columns">
-            <div><h3>Objectif</h3><p>Répéter les étapes de mise en place de manière plus claire et régulière, et pratiquer l’administration Linux par script.</p></div>
-            <div><h3>Outils & notions</h3><ul class="tag-list"><li>Bash</li><li>Linux</li><li>Web</li><li>DNS</li><li>Automatisation</li></ul></div>
-          </div></details>
+          <p class="eyebrow">Scripter, fiabiliser & gagner du temps</p>
+          <h2>Automatisation du provisionnement de services sous Linux</h2>
+          <p class="case-summary">Conception de scripts shell Bash pour automatiser le déploiement et la configuration reproductible d'environnements web et de serveurs DNS.</p>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Contexte & Travail réalisé</h3>
+                <p>Afin de limiter les erreurs humaines lors de déploiements répétés et d'accélérer la mise en service de nouveaux hôtes de test :</p>
+                <ul class="case-bullet-list">
+                  <li><strong>Scripts Bash modulaires :</strong> Détection automatique de la distribution (Debian/Ubuntu), vérification des privilèges root, gestion des codes d'erreur et logs horodatés.</li>
+                  <li><strong>Serveur Web & Hôtes virtuels :</strong> Installation automatisée des paquets (Apache/Nginx, modules, configuration des VirtualHosts et permissions d'accès).</li>
+                  <li><strong>DNS BIND9 :</strong> Génération automatique des fichiers de zones directes et inverses, incrémentation du serial SOA et contrôle de syntaxe avec <code>named-checkconf</code> et <code>named-checkzone</code>.</li>
+                  <li><strong>Reproductibilité :</strong> Réduction du temps de déploiement de 45 minutes à moins de 2 minutes par serveur.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Technologies mobilisées</h3>
+                <ul class="tag-list">
+                  <li>Bash scripting</li>
+                  <li>Linux Debian / Ubuntu</li>
+                  <li>BIND9 (DNS)</li>
+                  <li>Apache / Nginx</li>
+                  <li>Automatisation CLI</li>
+                  <li>Gestion des erreurs</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </article>
 
+      <!-- PROJET 04 : STAGE CCI DE CORSE -->
       <article class="case-study case-study-highlight" id="stage">
-        <div class="case-side"><span class="case-number mono">04</span><span class="case-type">EXPÉRIENCE<br>STAGE</span><span class="case-year mono">MAI—JUIN 2026</span></div>
+        <div class="case-side">
+          <span class="case-number mono">04</span>
+          <span class="case-type">EXPÉRIENCE PROFESSIONNELLE<br>STAGE SUR LE TERRAIN</span>
+          <span class="case-year mono">MAI — JUIN 2026</span>
+        </div>
         <div class="case-main">
-          <p class="eyebrow">CCI de Corse · Service informatique</p>
-          <h2>Technicien réseaux & systèmes</h2>
-          <p class="case-summary">Une immersion dans l’exploitation quotidienne d’un service informatique, entre infrastructure, gestion de parc et accompagnement des utilisateurs.</p>
-          <details class="case-details"><summary>Voir le détail du projet</summary><div class="case-columns">
-            <div><h3>Contributions</h3><p>Configuration et déploiement de trois stacks de commutateurs ; installation, configuration et mise en production de GLPI ; support de proximité et résolution d’incidents de niveaux 1 et 2.</p></div>
-            <div><h3>Contexte technique</h3><ul class="tag-list"><li>Commutation</li><li>Haute disponibilité</li><li>GLPI</li><li>Gestion de parc</li><li>Support N1/N2</li></ul></div>
-          </div></details>
+          <p class="eyebrow">CCI de Corse · Service Informatique</p>
+          <h2>Technicien Réseaux & Systèmes</h2>
+          <p class="case-summary">Immersion au sein d'une infrastructure d'entreprise multisite : déploiement matériel, unification de la commutation, gestion de parc et accompagnement des utilisateurs.</p>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Missions & Réalisations concrètes</h3>
+                <ul class="case-bullet-list">
+                  <li><strong>Stacking de 3 commutateurs :</strong> Assemblage physique, interconnexion par modules dédiés, configuration de l'agrégation de liens et vérification du basculement en haute disponibilité.</li>
+                  <li><strong>Déploiement & Configuration de GLPI :</strong> Installation du serveur, interfaçage avec l'annuaire, recensement des postes, imprimantes et matériels réseaux pour la gestion du cycle de vie du parc.</li>
+                  <li><strong>Support de proximité N1/N2 :</strong> Prise en charge des sollicitations utilisateurs, résolution de pannes réseau, réinstallation de postes de travail et paramétrage des accès.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Environnement & Outils</h3>
+                <ul class="tag-list">
+                  <li>Stacking commutateurs</li>
+                  <li>Haute disponibilité</li>
+                  <li>GLPI / ITSM</li>
+                  <li>Support utilisateurs N1/N2</li>
+                  <li>Brassage & Baies</li>
+                  <li>Réseau multisite</li>
+                </ul>
+              </div>
+            </div>
+          </details>
         </div>
       </article>
+
+      <!-- PROJET 05 : NOVA IT -->
+      <article class="case-study" id="novait">
+        <div class="case-side">
+          <span class="case-number mono">05</span>
+          <span class="case-type">PROJET ENTREPRENEURIAL<br>SERVICES NUMÉRIQUES</span>
+          <span class="case-year mono">DEPUIS 2026</span>
+        </div>
+        <div class="case-main">
+          <p class="eyebrow">Entrepreneuriat & Relation client</p>
+          <h2>Nova IT — Prestations informatiques & Digitalisation</h2>
+          <p class="case-summary">Création d'une activité de services numériques : assistance technique de proximité, maintenance matérielle, création de sites vitrines et ateliers de sensibilisation.</p>
+          <div class="case-media">
+            <img src="images/ImageNovaIT.webp" alt="Services Nova IT : Dépannage, Création de sites, Formations" class="project-img-thumb" loading="lazy">
+          </div>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Activités développées</h3>
+                <ul class="case-bullet-list">
+                  <li><strong>Dépannage & Maintenance :</strong> Diagnostic de pannes matérielles, réinstallation sécurisée d'OS, éradication de malwares et optimisation de postes de travail.</li>
+                  <li><strong>Développement Web :</strong> Conception et mise en ligne du site <a href="https://novait.fr" target="_blank" rel="noopener">novait.fr</a> et de sites vitrines adaptés aux besoins de petites structures locales.</li>
+                  <li><strong>Pédagogie & Sensibilisation :</strong> Accompagnement des utilisateurs aux réflexes de base face au phishing, gestion des mots de passe et sauvegardes.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Compétences transversales</h3>
+                <ul class="tag-list">
+                  <li>Gestion de projet</li>
+                  <li>Relation client</li>
+                  <li>Diagnostic méthodique</li>
+                  <li>Développement Web</li>
+                  <li>Autonomie</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
     </section>
 
-    <section class="section section-dark">
+    <!-- SECTION CYBER & CERTIFICATIONS -->
+    <section class="section section-dark" id="cyber-lab">
       <div class="container cyber-layout">
-        <div><p class="eyebrow">En parallèle / Cybersécurité</p><h2>Pratiquer dans<br>des labs dédiés.</h2><p class="section-intro">Je développe mes réflexes avec des challenges et parcours conçus pour l’apprentissage, notamment sur Root-Me et TryHackMe.</p><a class="text-link text-link-light" href="index.html#certifications">Voir mon profil & mes certifications →</a></div>
+        <div>
+          <p class="eyebrow">Laboratoires & Veille continue</p>
+          <h2>Pratique continue<br>en cybersécurité.</h2>
+          <p class="section-intro">Je maintiens et développe mes réflexes d'investigation et d'audit sur des plateformes reconnues, avec des parcours d'apprentissage balisés.</p>
+          <div class="cert-img-container">
+            <img src="images/THM-KDWJDUNEXH.webp" alt="Certificat TryHackMe Pre Security validé par Olivier Cesari" class="cert-img" loading="lazy">
+          </div>
+        </div>
         <div class="cyber-links">
-          <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener"><span class="mono">PROFIL / 01</span><strong>Root-Me</strong><span>OxyFifi · 500 points indiqués</span><b aria-hidden="true">↗</b></a>
-          <a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener"><span class="mono">PROFIL / 02</span><strong>TryHackMe</strong><span>RicinusCommunis · parcours en cours</span><b aria-hidden="true">↗</b></a>
-          <div class="cert-mini"><span class="mono">CERTIFICATIONS</span><p>Permis d’Osinter · Oscar Zulu<br>Cyber Security 101 · TryHackMe<br>Pre Security · TryHackMe</p></div>
+          <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">
+            <span class="mono">PROFIL / 01 · ROOT-ME</span>
+            <strong>OxyFifi</strong>
+            <span>500+ points validés · CTF, Web, Réseau & Système</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+          <a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">
+            <span class="mono">PROFIL / 02 · TRYHACKME</span>
+            <strong>RicinusCommunis</strong>
+            <span>Parcours Pre Security validé · Cyber Security 101 en cours</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+          <a href="https://permis-osint.fr/verifier/OZ-2026-AJC3UE" target="_blank" rel="noopener">
+            <span class="mono">CERTIFICATION OFFICIELLE · OSCAR ZULU</span>
+            <strong>Permis d'Osinter</strong>
+            <span>Score : 38/40 (95%) · Vérifier l'attestation OZ-2026-AJC3UE</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+          <div class="cert-mini">
+            <span class="mono">OUTILS D'AUDIT PRATIQUÉS</span>
+            <p>Nmap · Wireshark · Burp Suite · Gobuster · Hydra · Environnement Exegol · Méthodes OSINT</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="cta-section container">
-      <div><p class="eyebrow">Échangeons</p><h2>Une question sur<br>un projet ?</h2></div><a class="button button-primary" href="contact.html">Me contacter <span aria-hidden="true">↗</span></a>
+      <div>
+        <p class="eyebrow">Alternance & Contact</p>
+        <h2>Un projet qui vous parle ?<br>Discutons de vos besoins.</h2>
+      </div>
+      <div class="cta-actions">
+        <a class="button button-primary" href="contact.html">Me contacter <span aria-hidden="true">↗</span></a>
+        <a class="button button-quiet" href="CV-Olivier-Cesari.pdf" target="_blank" rel="noopener">📄 Télécharger mon CV</a>
+      </div>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-row"><a class="brand brand-footer" href="index.html"><span class="brand-mark">OC</span><span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span></a><p>Portfolio personnel · 2026</p><div class="footer-links"><a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me</a><a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe</a><a href="contact.html">Contact</a></div></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">OC</span>
+        <span>Olivier Cesari<span class="brand-sub">BTS SIO · SISR</span></span>
+      </a>
+      <p>Portfolio professionnel · Olivier Cesari · 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/oxyfifi" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">Root-Me</a>
+        <a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">TryHackMe</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
   <script>
     const menuButton = document.querySelector(".menu-toggle");
     const nav = document.querySelector("#navigation");
