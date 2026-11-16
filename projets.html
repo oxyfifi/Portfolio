@@ -55,13 +55,15 @@
       <h1>Des réalisations pour<br><span class="accent">éprouver l’infrastructure.</span></h1>
       <p class="page-lede">Ma formation m’amène à concevoir, déployer, documenter et superviser des environnements systèmes et réseaux. Voici les projets académiques, professionnels et personnels qui illustrent mes compétences.</p>
       <div class="page-meta mono">
-        <a href="#home-lab">00 — HOME LAB</a>
-        <a href="#infrastructure">01 — RÉSEAUX L2/L3</a>
-        <a href="#netbox">02 — INVENTAIRE NETBOX</a>
-        <a href="#automatisation">03 — AUTOMATISATION BASH</a>
-        <a href="#stage">04 — STAGE CCI</a>
-        <a href="#novait">05 — NOVA IT</a>
-        <a href="#cyber-lab">06 — LABS CYBER</a>
+        <a href="#home-lab">00 — HOME LAB 10G &amp; SOC</a>
+        <a href="#anvers">01 — AGENCE ANVERS (HA)</a>
+        <a href="#cyber-ai">02 — CYBER AI</a>
+        <a href="#infrastructure">03 — RÉSEAUX L2/L3</a>
+        <a href="#netbox">04 — INVENTAIRE NETBOX</a>
+        <a href="#automatisation">05 — AUTOMATISATION BASH</a>
+        <a href="#stage">06 — STAGE CCI</a>
+        <a href="#novait">07 — NOVA IT</a>
+        <a href="#cyber-lab">08 — LABS CYBER</a>
       </div>
     </section>
 
@@ -69,76 +71,76 @@
     <section class="section section-dark home-lab-section" id="home-lab">
       <div class="container">
         <div class="section-heading section-heading-invert">
-          <div><p class="eyebrow">Lab personnel / Architecture & Virtualisation</p><h2 id="home-lab-title">Mon Home Lab</h2></div>
-          <p class="section-intro">Un banc d'essai complet à domicile pour expérimenter l'auto-hébergement, la virtualisation Proxmox VE, la segmentation réseau et la résilience du stockage.</p>
+          <div><p class="eyebrow">Lab personnel / Dorsale 10 Gbps, Proxmox VE &amp; SOC</p><h2 id="home-lab-title">Home Lab 10 Gbps &amp; Laboratoire SOC</h2></div>
+          <p class="section-intro">Une infrastructure complète à domicile reliée en fibre 10 Gbps SFP+ pour expérimenter la virtualisation Proxmox VE, l'orchestration de 25+ conteneurs Docker, la détection d'intrusion (Suricata / EveBox) et l'accès distant sécurisé.</p>
         </div>
 
         <div class="lab-topology" aria-label="Schéma de l’architecture du Home Lab">
           <article class="lab-node">
-            <span class="lab-node-label mono">POSTE CLIENT</span>
-            <strong>PC portable</strong>
-            <span>Station d'administration & de diagnostic</span>
+            <span class="lab-node-label mono">ACCÈS DISTANT &amp; LAN</span>
+            <strong>Tailscale &amp; Postes</strong>
+            <span>Tunnel maillé (Subnet Routing) &amp; Station d'admin</span>
           </article>
-          <div class="lab-link" aria-label="Liaison Gigabit Ethernet">
-            <span class="mono">RJ45 1GbE</span>
+          <div class="lab-link" aria-label="Liaison Fibre 10 Gbps SFP+">
+            <span class="mono">Fibre 10G SFP+</span>
             <span class="lab-link-line" aria-hidden="true"></span>
           </div>
           <article class="lab-node lab-switch">
-            <span class="lab-node-label mono">COMMUTATION MANAGEABLE</span>
+            <span class="lab-node-label mono">CŒUR DE RÉSEAU 10G</span>
             <strong>Aruba 2930F</strong>
-            <span>Switch manageable · VLANs & QoS</span>
+            <span>Switch manageable L2/L3 · VLANs &amp; SFP+ 10G</span>
           </article>
         </div>
 
-        <div class="lab-downlink" aria-hidden="true"><span>Liaison réseau local</span></div>
+        <div class="lab-downlink" aria-hidden="true"><span>Dorsale 10 Gbps locale</span></div>
 
         <article class="lab-host">
           <div class="lab-host-head">
             <div>
-              <span class="lab-node-label mono">SERVEUR HÔTE & STOCKAGE</span>
-              <h3>Mini-PC · Hyperviseur Proxmox VE</h3>
-              <p>Virtualisation de machines d'apprentissage et services réseau</p>
+              <span class="lab-node-label mono">SERVEUR HÔTE &amp; CONTENEURISATION</span>
+              <h3>Serveur Proxmox VE (Intel Core i5-12400) &amp; Hôte Docker</h3>
+              <p>Hypervision de VMs/LXC, 25+ services conteneurisés, SOC réseau et IA locale</p>
             </div>
             <div class="lab-storage">
-              <span class="mono">CAPACITÉ AJOUTÉE</span>
+              <span class="mono">CAPACITÉ STOCKAGE</span>
               <strong>~4 To</strong>
             </div>
           </div>
           <div class="lab-workloads">
             <div class="lab-workload">
-              <span class="lab-node-label mono">SERVICE AUTO-HÉBERGÉ</span>
-              <strong>Nextcloud Hub</strong>
-              <p>Synchronisation de fichiers sécurisée, accès distant et sauvegardes régulières.</p>
+              <span class="lab-node-label mono">LABORATOIRE SOC &amp; BASTION</span>
+              <strong>Suricata 8, EveBox &amp; Guacamole</strong>
+              <p>Inspection réseau IDS/NIDS (53 000+ règles ET Open), alertes SOC et bureau web HTML5 vers Kali Linux.</p>
             </div>
             <div class="lab-workload">
-              <span class="lab-node-label mono">ENVIRONNEMENTS DE TEST</span>
-              <strong>VM Kali Linux & Windows</strong>
-              <p>Laboratoires d'expérimentation isolés pour l'audit et l'administration système.</p>
+              <span class="lab-node-label mono">AUTO-HÉBERGEMENT &amp; DOCKER</span>
+              <strong>25+ Services Conteneurisés</strong>
+              <p>Nextcloud, Vaultwarden, AdGuard Home, Nginx Proxy Manager, Immich, Paperless-ngx, Uptime Kuma, Portainer &amp; Dockge.</p>
             </div>
           </div>
         </article>
-        <p class="lab-caption">Vue d’ensemble synthétique. La segmentation réseau et le plan d'adressage IP privé sont gérés localement.</p>
+        <p class="lab-caption">Vue d’ensemble de l'architecture 10 Gbps. Accès externe sécurisé sans ouverture de ports WAN grâce au routage de sous-réseau Tailscale.</p>
 
         <div class="lab-achievements">
           <article>
-            <span class="mono">01 / HYPERVISION</span>
-            <h3>Proxmox VE</h3>
-            <p>Installation bare-metal, gestion fine des ressources RAM/CPU et snapshots avant mises à jour.</p>
+            <span class="mono">01 / RÉSEAU 10G &amp; VPN</span>
+            <h3>Fibre SFP+ &amp; Tailscale</h3>
+            <p>Dorsale 10 Gbps sur switch Aruba 2930F et accès distant chiffré à tout le sous-réseau LAN depuis l'extérieur.</p>
           </article>
           <article>
-            <span class="mono">02 / SERVICES</span>
-            <h3>Nextcloud</h3>
-            <p>Déploiement d'une solution de cloud privé pour centraliser la documentation et les sauvegardes.</p>
+            <span class="mono">02 / DÉFENSE &amp; SOC</span>
+            <h3>Suricata &amp; EveBox</h3>
+            <p>Sonde IDS/NIDS inspectant le trafic en temps réel avec plus de 53 000 règles et bastion web Apache Guacamole.</p>
           </article>
           <article>
-            <span class="mono">03 / SÉPARATION</span>
-            <h3>VMs de lab</h3>
-            <p>Cloisonnement d'environnements Kali Linux pour les exercices CTF et Windows pour les tests AD.</p>
+            <span class="mono">03 / ORCHESTRATION</span>
+            <h3>25+ Conteneurs Docker</h3>
+            <p>Gestion de stacks Compose via Portainer et Dockge, reverse proxy Nginx Proxy Manager et supervision Uptime Kuma.</p>
           </article>
           <article>
-            <span class="mono">04 / RÉSILIENCE</span>
-            <h3>Stockage 4 To</h3>
-            <p>Extension de la capacité de stockage et mise en place de politiques de sauvegarde.</p>
+            <span class="mono">04 / CLOUD PRIVÉ</span>
+            <h3>Services &amp; Stockage 4 To</h3>
+            <p>Auto-hébergement de Nextcloud, Vaultwarden (coffre-fort), AdGuard Home (DNS) et inférence LLM locale (Ollama).</p>
           </article>
         </div>
       </div>
@@ -147,10 +149,92 @@
     <!-- LISTE DES PROJETS DÉTAILLÉS -->
     <section class="project-list container">
 
-      <!-- PROJET 01 : MODERNISATION L2/L3 -->
-      <article class="case-study" id="infrastructure">
+      <!-- PROJET : AGENCE ANVERS -->
+      <article class="case-study case-study-highlight" id="anvers">
         <div class="case-side">
           <span class="case-number mono">01</span>
+          <span class="case-type">ARCHITECTURE HA &amp; SIEM<br>PROJET BTS SIO</span>
+          <span class="case-year mono">2026</span>
+        </div>
+        <div class="case-main">
+          <p class="eyebrow">Haute disponibilité, sécurité périmétrique &amp; SOC</p>
+          <h2>Architecture d'entreprise Haute Disponibilité — Projet « Agence Anvers »</h2>
+          <p class="case-summary">Conception, déploiement et documentation complète de l'infrastructure critique d'une agence de 48 postes : cluster Proxmox VE à 3 nœuds, pare-feu UTM Stormshield SN210, services DNS/DHCP redondés, SIEM Wazuh et automatisation Ansible.</p>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Architecture &amp; Travail réalisé</h3>
+                <ul class="case-bullet-list">
+                  <li><strong>Sécurité périmétrique &amp; Segmentation :</strong> Découpage du réseau selon le principe du moindre privilège en 5 VLANs (Production, Administration, Client, SIEM, Bastion) et une DMZ sous le contrôle d'un pare-feu UTM <strong>Stormshield SN210</strong> et de commutateurs <strong>Aruba L2/L3 (2930F &amp; 1930)</strong> + tunnels VPN.</li>
+                  <li><strong>Cluster Proxmox VE &amp; Sauvegardes :</strong> Mise en œuvre d'un cluster haute disponibilité à 3 nœuds (2 serveurs Proxmox + QDevice Quorum sur Raspberry Pi 4), stockage partagé <strong>NAS Synology DS923+</strong> et sauvegardes dédupliquées via <strong>Proxmox Backup Server (PBS)</strong>.</li>
+                  <li><strong>Services d'infrastructure en HA :</strong> Serveurs DNS faisant autorité <strong>Bind9 Master/Slave</strong> en DMZ, résolveur récursif <strong>Unbound</strong> avec stub-zone, et cluster <strong>ISC-DHCP Failover</strong> sur le LAN.</li>
+                  <li><strong>SIEM, Supervision &amp; Automatisation :</strong> Déploiement du SIEM/XDR <strong>Wazuh</strong> (collecte et corrélation des logs d'agents), nœud de contrôle <strong>Ansible</strong>, supervision <strong>Zabbix v7 / SNMP</strong>, Active Directory et modèles Windows 11 Sysprep.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Technologies &amp; Compétences</h3>
+                <ul class="tag-list">
+                  <li>Cluster Proxmox VE (HA)</li>
+                  <li>Proxmox Backup Server</li>
+                  <li>Stormshield SN210 (UTM)</li>
+                  <li>Aruba 2930F / 1930</li>
+                  <li>Wazuh SIEM / XDR</li>
+                  <li>Ansible (IaC)</li>
+                  <li>Bind9 Master/Slave &amp; Unbound</li>
+                  <li>ISC-DHCP Failover</li>
+                  <li>Zabbix v7 &amp; SNMP</li>
+                  <li>NAS Synology</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- PROJET : CYBER AI -->
+      <article class="case-study" id="cyber-ai">
+        <div class="case-side">
+          <span class="case-number mono">02</span>
+          <span class="case-type">CYBERSÉCURITÉ &amp; IA<br>PROJET TECHNIQUE</span>
+          <span class="case-year mono">2026</span>
+        </div>
+        <div class="case-main">
+          <p class="eyebrow">Isolation réseau, conteneurisation &amp; agents autonomes</p>
+          <h2>CYBER AI — Plateforme autonome d'audit et de résolution CTF par IA locale</h2>
+          <p class="case-summary">Développement et déploiement d'une plateforme réunissant un agent IA local (Ollama), un laboratoire d'audit Kali Linux isolé sous Docker et un filtrage sortant strict par proxy Squid.</p>
+          <details class="case-details" open>
+            <summary>Voir le détail des réalisations</summary>
+            <div class="case-columns">
+              <div>
+                <h3>Architecture &amp; Sécurité</h3>
+                <ul class="case-bullet-list">
+                  <li><strong>Laboratoire Kali Linux cloisonné :</strong> Exécution des outils de reconnaissance et d'audit au sein d'un conteneur non-root (<code>cyber-ai-lab</code>) contrôlé par une matrice de permissions sur 7 niveaux.</li>
+                  <li><strong>Filtrage de périmètre (Squid Proxy) :</strong> Contrôle strict des connexions externes via un proxy Squid limitant les requêtes aux seuls domaines et cibles de laboratoire explicitement autorisés.</li>
+                  <li><strong>Orchestration LLM &amp; RAG :</strong> Pilotage de modèles locaux via l'API <strong>Ollama (Qwen3)</strong> pour l'élaboration de stratégies, l'analyse des sorties stdout/stderr et la recherche documentaire indexée sous <strong>SQLite FTS5</strong>.</li>
+                  <li><strong>Exploitation &amp; Sécurité :</strong> Scripts Bash d'installation, de diagnostic de santé et de rotation atomique des jetons d'accès administrateur.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Stack Technique</h3>
+                <ul class="tag-list">
+                  <li>Kali Linux (Docker non-root)</li>
+                  <li>Squid Proxy (Filtrage)</li>
+                  <li>Ollama / Qwen3 (LLM local)</li>
+                  <li>Python &amp; SQLite FTS5</li>
+                  <li>Docker Compose</li>
+                  <li>Bash Scripting</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- PROJET 03 : MODERNISATION L2/L3 -->
+      <article class="case-study" id="infrastructure">
+        <div class="case-side">
+          <span class="case-number mono">03</span>
           <span class="case-type">RÉSEAUX & SYSTÈMES<br>PROJET ACADÉMIQUE</span>
           <span class="case-year mono">2026</span>
         </div>
@@ -188,10 +272,10 @@
         </div>
       </article>
 
-      <!-- PROJET 02 : NETBOX -->
+      <!-- PROJET 04 : NETBOX -->
       <article class="case-study" id="netbox">
         <div class="case-side">
-          <span class="case-number mono">02</span>
+          <span class="case-number mono">04</span>
           <span class="case-type">CARTOGRAPHIE & DCIM<br>PROJET ACADÉMIQUE</span>
           <span class="case-year mono">2026</span>
         </div>
@@ -230,10 +314,10 @@
         </div>
       </article>
 
-      <!-- PROJET 03 : AUTOMATISATION BASH -->
+      <!-- PROJET 05 : AUTOMATISATION BASH -->
       <article class="case-study" id="automatisation">
         <div class="case-side">
-          <span class="case-number mono">03</span>
+          <span class="case-number mono">05</span>
           <span class="case-type">SYSTÈMES & AUTOMATISATION<br>PROJET ACADÉMIQUE</span>
           <span class="case-year mono">2026</span>
         </div>
@@ -270,10 +354,10 @@
         </div>
       </article>
 
-      <!-- PROJET 04 : STAGE CCI DE CORSE -->
+      <!-- PROJET 06 : STAGE CCI DE CORSE -->
       <article class="case-study case-study-highlight" id="stage">
         <div class="case-side">
-          <span class="case-number mono">04</span>
+          <span class="case-number mono">06</span>
           <span class="case-type">EXPÉRIENCE PROFESSIONNELLE<br>STAGE SUR LE TERRAIN</span>
           <span class="case-year mono">MAI — JUIN 2026</span>
         </div>
@@ -308,10 +392,10 @@
         </div>
       </article>
 
-      <!-- PROJET 05 : NOVA IT -->
+      <!-- PROJET 07 : NOVA IT -->
       <article class="case-study" id="novait">
         <div class="case-side">
-          <span class="case-number mono">05</span>
+          <span class="case-number mono">07</span>
           <span class="case-type">PROJET ENTREPRENEURIAL<br>SERVICES NUMÉRIQUES</span>
           <span class="case-year mono">DEPUIS 2026</span>
         </div>
@@ -362,22 +446,22 @@
           </div>
         </div>
         <div class="cyber-links">
+          <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">
+            <span class="mono">🏆 1ʳᵉ PLACE POST-BAC · ROOT-ME PRO EDU 2026</span>
+            <strong>Vainqueur CTF Root-Me Pro EDU</strong>
+            <span>1ʳᵉ place en équipe (LLB, 5 étudiants) · Attestation Root-Me Pro du 4 nov. 2026 · Profil OxyFifi (500+ pts)</span>
+            <b aria-hidden="true">↗</b>
+          </a>
           <a href="https://yeswehack.com/user/ricinus" target="_blank" rel="noopener">
             <span class="mono">BUG BOUNTY · YESWEHACK</span>
             <strong>ricinus</strong>
             <span>Plateforme européenne de Bug Bounty · Recherche éthique et responsable de vulnérabilités</span>
             <b aria-hidden="true">↗</b>
           </a>
-          <a href="https://www.root-me.org/OxyFifi?lang=fr" target="_blank" rel="noopener">
-            <span class="mono">PROFIL / 01 · ROOT-ME</span>
-            <strong>OxyFifi</strong>
-            <span>500+ points validés · CTF, Web, Réseau & Système</span>
-            <b aria-hidden="true">↗</b>
-          </a>
           <a href="https://tryhackme.com/p/RicinusCommunis" target="_blank" rel="noopener">
-            <span class="mono">PROFIL / 02 · TRYHACKME</span>
+            <span class="mono">CERTIFICATIONS · TRYHACKME</span>
             <strong>RicinusCommunis</strong>
-            <span>Parcours Pre Security validé · Cyber Security 101 en cours</span>
+            <span>Pre Security Certificate &amp; Cyber Security 101 validés</span>
             <b aria-hidden="true">↗</b>
           </a>
           <a href="https://permis-osint.fr/verifier/OZ-2026-AJC3UE" target="_blank" rel="noopener">
@@ -387,8 +471,8 @@
             <b aria-hidden="true">↗</b>
           </a>
           <div class="cert-mini">
-            <span class="mono">OUTILS D'AUDIT PRATIQUÉS</span>
-            <p>Nmap · Wireshark · Burp Suite · Gobuster · Hydra · Environnement Exegol · Méthodes OSINT</p>
+            <span class="mono">OUTILS D'AUDIT &amp; DÉFENSE PRATIQUÉS</span>
+            <p>Wazuh SIEM · Suricata IDS / EveBox · Guacamole · Nmap · Wireshark · Burp Suite · Gobuster · Hydra · Exegol · OSINT</p>
           </div>
         </div>
       </div>
@@ -396,7 +480,7 @@
 
     <section class="cta-section container">
       <div>
-        <p class="eyebrow">Alternance & Contact</p>
+        <p class="eyebrow">Stage &amp; Contact</p>
         <h2>Un projet qui vous parle ?<br>Discutons de vos besoins.</h2>
       </div>
       <div class="cta-actions">
